@@ -50,6 +50,7 @@ order by numOrders desc
 
 ## delete all users that have no orders. Should delete 17 (or 18 if you haven't deleted the record added) records.
 
+delete from customers
 where customerid in
 (select customers.customerid from customers
 left join orders
